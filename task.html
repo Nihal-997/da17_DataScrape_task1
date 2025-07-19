@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Markdown in HTML</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+    }
+    .title {
+      color: #55b30d;
+    }
+    .bold-italic {
+      font-weight: bold;
+      font-style: italic;
+      color: #e76f51;
+    }
+    .strike {
+      text-decoration: line-through;
+      color: #999;
+    }
+    .heading {
+      margin-top: 20px;
+      border-bottom: 1px solid #c00f0f;
+    }
+    .task-list, .ordered-list {
+      margin-left: 20px;
+    }
+    .code-inline {
+      background-color: #308087;
+      padding: 2px 6px;
+      font-family: monospace;
+      border-radius: 4px;
+    }
+    .code-block {
+      background-color: #f6c918;
+      padding: 10px;
+      font-family: monospace;
+      border: 1px solid #4acc23;
+      white-space: pre-wrap;
+    }
+    .blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #1dc6f1;
+      padding-left: 10px;
+      margin: 10px 0;
+    }
+    .horizontal-rule {
+      border-top: 2px solid #bd1313;
+      margin: 20px 0;
+    }
+    .link {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #17fca8;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #0bdc0e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="title">title1</h1>
+  <h1 class="title">title2</h1>
+  <h3 class="title">title3</h3>
+  <h4 class="title">title4</h4>
+  <h5 class="title">title5</h5>
+  <h6 class="title">title6</h6>
+
+  <p class="bold-italic">___this is bold italic___</p>
+  <p class="strike">~~this is strikthrough text~~</p>
+
+  <h1 class="heading" id="arc">ARC DA 17</h1>
+
+  <p><strong>**python topic**</strong></p>
+  <ul class="task-list">
+    <li>python</li>
+    <li>sql</li>
+    <li>jupyter</li>
+    <li>DS</li>
+  </ul>
+
+  <p><strong><em>***bold and bold***</em></strong></p>
+
+  <ul class="task-list">
+    <li>task 1</li>
+    <li>task 2
+      <ul>
+        <li>sub-task 2.1</li>
+        <li>sub-task 2.2</li>
+      </ul>
+    </li>
+  </ul>
+
+  <ol class="ordered-list">
+    <li>First task</li>
+    <li>Second task
+      <ol>
+        <li>Sub-task</li>
+      </ol>
+    </li>
+  </ol>
+
+  <p>This is some code in a sentence: <span class="code-inline">python</span></p>
+
+  <div class="code-block" id="hello-code">
+python
+def hello_world():
+    print("Hello, Jupyter!")
+hello_world()
+  </div>
+
+  <div class="blockquote">&gt; this is a task 1.</div>
+  <div class="blockquote">&gt; this is a python code.</div>
+
+  <hr class="horizontal-rule">
+
+  <p>Here is a <a href="https://jupyter.org" class="link">link to Jupyter</a> and one to <a href="https://www.python.org" class="link">Python's homepage</a>.</p>
+
+  <table>
+    <tr>
+      <th>Language</th>
+      <th>Use Case</th>
+      <th>Difficulty</th>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>Data Science</td>
+      <td>Easy</td>
+    </tr>
+    <tr>
+      <td>SQL</td>
+      <td>Databases</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td>Web Development</td>
+      <td>Medium</td>
+    </tr>
+  </table>
+
+</body>
+</html>
